@@ -1,7 +1,7 @@
 
 HideCursor();
 
-par_num = 302; % participant no
+par_num = 200; % participant no
 
 ssiz = 10; % Senaryo Text Size
 tsiz = 24; % Text Text Size
@@ -9,8 +9,8 @@ tsiz = 24; % Text Text Size
 nis = 4; % number of instruction screen
 nts = 30; % number of trials
                                                                                                 
-vbvs = 120; % Axis matching task, the vertical size of boxes on axes.
-vbhs = 60; % Axis matching task, the horizontal size of boxes on axes.
+vbvs = 120; % variable box vertical size 
+vbhs = 60; % variable box horizontal size
 
  
 fl = 20; % fixation plus length
@@ -50,7 +50,7 @@ ts1 = ts1(order1,1);
 
 ts = ts(order,1);
 
-% Final random order of trials. One neutral scenario after group of 2 negative and 2 positive scenarios.
+% Final random order of trials. One neutral scenario after 
 ts = [ts(1:4,1);ts1(1,1);ts(5:8,1);ts1(2,1);ts(9:12,1);ts1(3,1);ts(13:16,1);ts1(4,1) ...
       ;ts(17:20,1);ts1(5,1);ts(21:24,1);ts1(6,1)];
 training = sdn(31,:);

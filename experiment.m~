@@ -31,7 +31,7 @@ end
 
 draw_screen(window, Wcenter,Hcenter,1,im0)
 text1 = char(training{1,3});
-text2 = char(training{1,4});                                                                                                        
+text2 = char(training{1,4});              
 text1 = double(text1);
 text2 = double(text2);
 [time1,time2,point1x,point1y,point2x,point2y,match] = ...

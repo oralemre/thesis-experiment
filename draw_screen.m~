@@ -169,8 +169,6 @@ function [time1, time2, point1x, point1y, point2x, point2y,match] = draw_screen(
             end
 
             if click == 1
-                
-                % Axis Matching Task, control flow of participants' match
                 if (text1_w >= xl && text1_w <= xr && text1_h >= xu && text1_h <= xd) ...
                     && (text2_w >= yl && text2_w <= yr && text2_h >= yu && text2_h <= yd)
                     match = 1;
